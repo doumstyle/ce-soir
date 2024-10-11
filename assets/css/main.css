@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  width: 1200px;
+  background-color: #9dbdac;
+  font-family: "open sans", sans-serif;
+}
+
+.caveat {
+  font-family: "Caveat", cursive;
+}
+
+header {
+  background: url("../img/planches.jpg");
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav .logo,
+footer .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+sup {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+hr {
+  width: 20px;
+  border: 4px solid #e84393;
+  margin: -1px auto;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin: 0 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.hero img {
+  max-width: 100%;
+  height: 250px;
+}
+
+.hero .image-decoration {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(45deg, transparent 0 50%, #e84393 50%);
+  position: absolute;
+  opacity: 0.8;
+}
+
+.story,
+.fare,
+.drink {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story .text-container,
+.fare .text-container,
+.drink .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+  background: url("../img/motif.jpg");
+}
+
+.story .text-container h2,
+.fare .text-container h2,
+.drink .text-container h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.story .text-container p,
+.fare .text-container p,
+.drink .text-container p {
+  font-size: 1rem;
+}
+
+.story .text-container p:last-of-type,
+.fare .text-container p:last-of-type,
+.drink .text-container p:last-of-type {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #e84393;
+}
+
+.fare .grain,
+.drink .grain {
+  height: 100px;
+}
+
+.story .photo,
+.fare .photo,
+.drink .photo {
+  display: flex;
+  flex: 2;
+  height: 100%;
+}
+
+.oeuf {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  background: url("../img/motif.jpg");
+}
+
+footer .address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 200px;
+}
+
+footer svg {
+  width: 30px;
+  height: 30px;
+  fill: #e84393;
+  padding: 0 4px;
+}
