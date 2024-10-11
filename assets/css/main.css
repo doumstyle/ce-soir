@@ -17,6 +17,8 @@ body {
 header {
   background: url("../img/planches.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -85,6 +87,11 @@ hr {
   background: linear-gradient(45deg, transparent 0 50%, #e84393 50%);
   position: absolute;
   opacity: 0.8;
+}
+
+.arrow {
+  width: 100px;
+  margin: 0 auto;
 }
 
 .story,
