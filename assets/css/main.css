@@ -69,6 +69,10 @@ hr {
   text-transform: uppercase;
 }
 
+.menu {
+  display: none;
+}
+
 .hero {
   display: flex;
   justify-content: center;
@@ -113,6 +117,7 @@ hr {
   flex: 1;
   padding: 20px;
   background: url("../img/motif.jpg");
+  order: 1;
 }
 
 .story .text-container h2,
@@ -181,4 +186,38 @@ footer svg {
   height: 30px;
   fill: #e84393;
   padding: 0 4px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+  }
+  .links {
+    display: none;
+  }
+
+  .fare .text-container,
+  .drink .text-container {
+    order: 2;
+  }
+  .story .text-container {
+    order: 1;
+  }
+  .story,
+  .fare,
+  .drink {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .social-media {
+    align-items: center;
+  }
 }
